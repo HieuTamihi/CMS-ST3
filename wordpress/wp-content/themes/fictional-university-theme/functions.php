@@ -174,8 +174,13 @@ function display_random_events() {
 add_action('custom_random_events', 'display_random_events');
 
 // Sử dụng Filter Hook
-add_filter('the_content', 'my_custom_content_filter');
+add_filter('the_content', 'add_post_date_to_content');
 
-function my_custom_content_filter($content) {
-    return $content . '<p>Nội dung thêm vào nội dung bài viết.</p>';
+function add_post_date_to_content($content) {
+    if (is_single() && is_main_query()) {
+        $post_date = get_the_date('j F, Y');
+        $date_html = '<p>Ngày đăng: ' . $post_date . '</p>';
+        $content = $date_html . $content;
+    }
+    return $content;
 }
