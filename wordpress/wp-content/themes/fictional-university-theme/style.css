@@ -1,0 +1,19 @@
+/*
+Theme name: Fictional-university-theme
+Them URL: https://wordpress.org/
+Author: Thai Hieu
+*/
+h1{
+    color: orange;
+}
+.list-unstyled .children{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.list-unstyled .children{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+#bank_account_div{
+    display: none;
+}

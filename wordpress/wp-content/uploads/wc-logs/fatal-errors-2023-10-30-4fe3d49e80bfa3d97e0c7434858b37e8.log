@@ -1,0 +1,2 @@
+2023-10-30T16:06:58+00:00 CRITICAL Cannot redeclare save_option1_info() (previously declared in C:\wamp64\www\wordpress\wp-content\themes\fictional-university-theme\functions.php:110) in C:\wamp64\www\wordpress\wp-content\themes\fictional-university-theme\functions.php on line 110
+
